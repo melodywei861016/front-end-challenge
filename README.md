@@ -52,10 +52,9 @@ Ask the users `loeklj` and `eldarshamukhamedov` to review your PR. Deadline is 2
 ?count=(integer)&cursor=(ISO date)
 ```
 
-**Status codes** 200, 500
-
-**Response of 200 (JSON)**
+**Status codes:** 200, 500
 ```
+Success response
 {
 	count: (integer),
 	cursor: (ISO date),
@@ -72,10 +71,9 @@ Ask the users `loeklj` and `eldarshamukhamedov` to review your PR. Deadline is 2
 }
 ```
 
-**Status codes** 200, 404
-
-**Response of 200 (JSON)**
+**Status codes:** 200, 404
 ```
+Success response
 {
 	<report that was archived>
 }
