@@ -51,8 +51,9 @@ Ask the users `loeklj` and `eldarshamukhamedov` to review your PR. Deadline is 2
 ### API details
 #### `GET /api/requests`
 **Request query-parameters**
-- count (integer)
-- cursor (ISO date)
+```
+?count=(integer)&cursor=(ISO date)
+```
 
 **Status codes** 200, 500
 **Response of 200 (JSON)**
