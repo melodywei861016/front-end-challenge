@@ -50,11 +50,12 @@ Ask the users `loeklj` and `eldarshamukhamedov` to review your PR. Deadline is 2
 
 ### API details
 #### `GET /api/requests`
-*Request query-parameters*
+**Request query-parameters**
 - count (integer)
 - cursor (ISO date)
 
-*Response of 200 (JSON)*
+**Status codes** 200, 500
+**Response of 200 (JSON)**
 ```
 {
 	count: (integer),
@@ -63,21 +64,18 @@ Ask the users `loeklj` and `eldarshamukhamedov` to review your PR. Deadline is 2
 }
 ```
 
-*Status codes*
-- 200
-- 500
-
 #### `PATCH /api/requests/archive`
-*Request JSON body*
-- id (UUID)
+**Request JSON**
+```
+{
+	id: (UUID),
+}
+```
 
-*Response of 200 (JSON)*
+**Status codes** 200, 404
+**Response of 200 (JSON)**
 ```
 {
 	<report that was archived>
 }
 ```
-
-*Status codes*
-- 200
-- 404 (JSON response: `{ error: 'Report not found!' }`)
