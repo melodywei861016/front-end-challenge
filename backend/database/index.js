@@ -5,7 +5,7 @@ const db = {
 		console.log(this.data[0])
 		const reports = this.data
 		.filter(report => !report.archived) // Filter out archived reports
-		.filter(report => new Date(report.createdAt) >= new Date(cursor)) // Filter out reports created before cursor
+		.filter(report => new Date(report.createdAt) <= new Date(cursor)) // Filter out reports created before cursor
 		.slice(0, count); // Slice to requested count
 
 		return {
