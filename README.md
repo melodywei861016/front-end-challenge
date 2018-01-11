@@ -82,3 +82,4 @@ Success response
 ## Misc details
 - You should set a timer for 3 hours. Aim to prioritize the necessary components. If you don't finish everything don't worry, as long as you have thought about what to do next if you had the time.
 - For questions email `(loek|eldar)@neednova.com`.
+- We trust that you ignore any forks you can find of this repo.
