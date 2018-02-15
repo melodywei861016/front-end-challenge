@@ -3,6 +3,7 @@ import fetch from 'isomorphic-fetch';
 import logo from './logo.svg';
 import { BACKEND_SERVER_PORT } from './constants';
 import ReportsScreenFunc from './components/ReportsScreenFunc';
+import './App.css'; 
 
 class App extends Component {
 	constructor(props) {
